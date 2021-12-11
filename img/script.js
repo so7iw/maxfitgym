@@ -1,0 +1,1 @@
+$(document).ready(()=>{$(".add").hide(),$(".showHide").click(function(e){e.preventDefault(),"Read More"===$(this).text()?$(this).text("Hide"):$(this).text("Read more"),$(this).closest(".caption").children(".add").slideToggle(650)})});
