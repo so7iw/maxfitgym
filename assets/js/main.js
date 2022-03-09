@@ -12,6 +12,8 @@
 //     footerOutput();
 window.onload = () => {
 
+    CustomException.prototype = Object.create(Error.prototype);
+
     fetchData("navigation", navOutput)
 
     function fetchData(file, callback) {
@@ -54,7 +56,16 @@ window.onload = () => {
           </div>
           `
         document.getElementById("navig").innerHTML = output;
-        fetchData("trainingOffers", offersOutput);
+        try {
+            if (document.getElementById("1"))
+                fetchData("trainingOffers", offersOutput);
+            else if (document.getElementById("2"))
+                fetchData("categories", categoriesOutput);
+            else throw new CustomException("Nepostojeca html stranica.");
+        }
+        catch (e) {
+            console.error(e);
+        }
     }
 
     // ispis ponude
@@ -87,8 +98,8 @@ window.onload = () => {
 
     function authorOutput(data) {
         var output = "";
-        
-            output += `
+
+        output += `
                 <h3 class="section-heading text-light text-uppercase subj"> Author </h3>
                 <div class="col-md-4">
                     <img class="img-fluid rounded mx-auto d-block" src="${data.image.src}" alt="${data.image.alt}" />
@@ -392,4 +403,11 @@ window.onload = () => {
         document.getElementById("icons").innerHTML = output;
         fetchData("formQuestions", formOutput);
     }
+
+    function CustomException(message) {
+        const error = new Error(message);
+        return error;
+    }
+
+
 }
