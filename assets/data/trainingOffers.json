@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Crossfit",
+        "price": 120,
+        "image": {
+            "src": "assets/img/crossfit.jpg",
+            "alt": "crossfit"
+        },
+        "content": "CrossFit is promoted as both a physical exercise philosophy and a competitive fitness sport, incorporating elements from high-intensity interval training, Olympic weightlifting, plyometrics, powerlifting, gymnastics, girevoy sport, calisthenics, strongman, and other exercises."
+    },
+    {
+        "id": 2,
+        "name": "Calisthenics",
+        "price": 100,
+        "image": {
+            "src": "assets/img/calisthenics.jpg",
+            "alt": "calisthenics"
+        },
+        "content": "Calisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups (gross motor movements), such as running, standing, grasping, pushing, etc. These exercises are often performed rhythmically and with minimal equipment, as bodyweight exercises."
+    },
+    {
+        "id": 3,
+        "name": "Bodybuilding",
+        "price": 120,
+        "image": {
+            "src": "assets/img/bb.jpg",
+            "alt": "bodybuilding"
+        },
+        "content": "Bodybuilding is the use of progressive resistance exercise to control and develop one's musculature (muscle buliding) by muscle hypertrophy for aesthetic purposes."
+    },
+    {
+        "id": 4,
+        "name": "Power Lifting",
+        "price": 120,
+        "image": {
+            "src": "assets/img/pl1.jpg",
+            "alt": "power lifting"
+        },
+        "content": "Powerlifting is a strength sport that consists of attempts at maximal weight on three lifts: squat, bench press, and deadlift. You can expect a hard time, but this program will make you stronger, way stronger."
+    },
+    {
+        "id": 5,
+        "name": "Gym Membership",
+        "price": 30,
+        "image": {
+            "src": "assets/img/gym.jpg",
+            "alt": "gym"
+        },
+        "content": "As simple as it can be - you are the master of your world. All machines and weights are available for your use, but you don't have a coach to guide you."
+    },
+    {
+        "id": 6,
+        "name": "Recovery",
+        "price": 100,
+        "image": {
+            "src": "assets/img/recovery.jpg",
+            "alt": "recovery"
+        },
+        "content": "If you suffered an injury, but want to get back into the game, this is an option for you."
+    }
+]

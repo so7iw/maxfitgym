@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "text": "Full name",
+        "tag": "name",
+        "placeholder": "Ime i Prezime",
+        "alertId": "alertName",
+        "alert": "Invalid full name. Full name consists of first and last names (freely add middle or second last name), of which both start with a capital letter and are separated with space."
+    },
+    {
+        "id": 2,
+        "text": "Email",
+        "tag": "email",
+        "placeholder": "example@something.com",
+        "alertId": "alertEmail",
+        "alert": "Invalid email address. Enter existing email address, in format example@something.com."
+    },
+    {
+        "id": 3,
+        "text": "Phone number",
+        "tag": "phone",
+        "placeholder": "06X XXXXXXX",
+        "alertId": "alertPhone",
+        "alert": "Invalid phone number. Enter a number in following format 06X (space) XXXXXXX."
+    }
+]

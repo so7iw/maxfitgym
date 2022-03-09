@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "src":"#offer",
+        "name":"Programs"
+    },
+    {
+        "id":2,
+        "src":"#contact",
+        "name":"Survey"
+    },
+    {
+        "id":3,
+        "src":"#aboutus",
+        "name":"About us"
+    },
+    {
+        "id":4,
+        "src":"#auth",
+        "name":"Author"
+    },
+    {
+        "id":5,
+        "src":"shop.html",
+        "name":"Shop"
+    }
+]

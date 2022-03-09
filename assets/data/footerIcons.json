@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "href": "https://www.linkedin.com/in/milos-stojanovski-7903a6153/",
+        "icon": "fab fa-linkedin",
+        "name": "LinkedIn"
+    },
+    {
+        "id": "2",
+        "href": "https://www.instagram.com/milos__stojanovski/",
+        "icon": "fab fa-instagram-square",
+        "name": "Instagram"
+    },
+    {
+        "id": "3",
+        "href": "https://www.facebook.com/milos.stojanovski",
+        "icon": "fab fa-facebook-square",
+        "name": "Facebook"
+    },
+    {
+        "id": "4",
+        "href": "sitemap.xml",
+        "icon": "fas fa-sitemap",
+        "name": "SiteMap"
+    }
+]
