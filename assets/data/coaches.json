@@ -3,7 +3,7 @@
         "id": 1,
         "name": "John Doe",
         "image": {
-            "src": "img/john.jpg",
+            "src": "assets/img/john.jpg",
             "alt": "Coach John"
         }
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Jennifer Brown",
         "image": {
-            "src": "img/jennifer.jpg",
+            "src": "assets/img/jennifer.jpg",
             "alt": "Coach Jennifer"
         }
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "name": "Mike Daniels",
         "image": {
-            "src": "img/mike.jpg",
+            "src": "assets/img/mike.jpg",
             "alt": "Coach Mike"
         }
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "name": "Rick Rowling",
         "image": {
-            "src": "img/rick.jpg",
+            "src": "assets/img/rick.jpg",
             "alt": "Coach Rick"
         }
     }

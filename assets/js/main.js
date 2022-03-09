@@ -87,20 +87,19 @@ window.onload = () => {
 
     function authorOutput(data) {
         var output = "";
-        data.forEach(obj => {
+        
             output += `
                 <h3 class="section-heading text-light text-uppercase subj"> Author </h3>
                 <div class="col-md-4">
-                    <img class="img-fluid rounded mx-auto d-block" src="${obj.image.src}" alt="${obj.image.alt}" />
+                    <img class="img-fluid rounded mx-auto d-block" src="${data.image.src}" alt="${data.image.alt}" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h4 class="h3 section-heading text-light"> ${obj.nameFull}</h4>
-                    <p id="description" class="text-muted"> ${obj.descr} </p>
+                    <h4 class="h3 section-heading text-light"> ${data.nameFull}</h4>
+                    <p id="description" class="text-muted"> ${data.descr} </p>
                 </div>
-                `
-        });
+                `;
         document.getElementById("author").innerHTML = output;
         fetchData("about", aboutOutput)
     }
@@ -328,7 +327,7 @@ window.onload = () => {
         let content = [
             {
                 image: {
-                    src: "img/building.jpg",
+                    src: "assets/img/building.jpg",
                     alt: "Our gym"
                 },
             }
