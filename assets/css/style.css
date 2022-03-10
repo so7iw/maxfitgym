@@ -77,9 +77,25 @@ img {
     font-size: 25px;
 }
 #docs a,
-#icons a {
+#icons a,
+#cart {
     color: #fff;
 }
+
+.cart{
+    font-size: 20px;
+}
+a.cart .cart-basket {
+    font-size: .6rem;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    background-color: #418deb;
+    border-radius: 50%;
+  }
 #docs a:hover,
 #icons a:hover {
     color: red;
