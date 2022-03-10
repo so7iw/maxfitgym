@@ -27,7 +27,9 @@ body {
 #auth,
 #coach,
 #contact,
-#offer {
+#offer,
+#shop,
+.carousel-inner{
     padding-top: 60px;
 }
 .pic,
@@ -107,4 +109,23 @@ img {
 }
 #slidesO {
     height: 70%;
+}
+#filterBtn {
+    border:  0px solid red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#filterBtn i{
+    font-size: 20px;
+}
+#offcanvasExample{
+    color:#fff;
+}
+#categories{
+    color:#fff;
 }

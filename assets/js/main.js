@@ -10,7 +10,18 @@
 //     aboutOutput();
 //     coachOutput();
 //     footerOutput();
-window.onload = () => {
+
+let scriptIsLoaded = false;
+
+function loadAdditionalScript() {
+    var my_awesome_script = document.createElement('script');
+
+    my_awesome_script.setAttribute('src','assets/js/script.js');
+
+    document.head.appendChild(my_awesome_script);
+
+    scriptIsLoaded = true;
+} 
 
     CustomException.prototype = Object.create(Error.prototype);
 
@@ -22,6 +33,13 @@ window.onload = () => {
             method: "get",
             dataType: "json",
             success: function (response) {
+                //ucitaj skript fajl 
+                //ukoliko vec postoji onda nemoj ucitavati
+                console.log(scriptIsLoaded)
+
+                if(file === "author") 
+                    loadAdditionalScript();
+                    
                 callback(response);
             },
             error: function (err) {
@@ -413,5 +431,8 @@ window.onload = () => {
         return error;
     }
 
+    function categoriesOutput(){
+        
+    }
 
-}
+
