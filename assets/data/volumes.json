@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"100g-500g",
+        "value":{
+            "bottom":100,
+            "top":500
+        }
+    },
+    {
+        "id":2,
+        "name":"0.5kg-2kg",
+        "value":{
+            "bottom":500,
+            "top":2000
+        }
+    },
+    {
+        "id":3,
+        "name":"2kg-5kg",
+        "value":{
+            "bottom":2000,
+            "top":5000
+        }
+    }
+]

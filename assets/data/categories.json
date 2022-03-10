@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Whey Protein"
+    },
+    {
+        "id":2,
+        "name":"Creatin"
+    },
+    {
+        "id":3,
+        "name":"BCAA"
+    },
+    {
+        "id":4,
+        "name":"Gainers"
+    },
+    {
+        "id":5,
+        "name":"Vitamins"
+    },
+    {
+        "id":6,
+        "name":"Gear"
+    }
+]

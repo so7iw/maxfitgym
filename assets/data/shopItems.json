@@ -1,0 +1,288 @@
+[
+    {
+        "id":1,
+        "name":"Delicius Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Delicius Whey"
+        },
+        "price":3000,
+        "taste":3,
+        "volume":1900,
+        "category":1,
+        "brand":3
+    },
+    {
+        "id":2,
+        "name":"Prostar 100% Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Prostar 100% Whey"
+        },
+        "price":6000,
+        "taste":3,
+        "volume":3000,
+        "category":1,
+        "brand":4
+    },
+    {
+        "id":3,
+        "name":"Prostar 100% Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Prostar 100% Whey"
+        },
+        "price":6000,
+        "taste":2,
+        "volume":3000,
+        "category":1,
+        "brand":4
+    },
+    {
+        "id":4,
+        "name":"Prostar 100% Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Prostar 100% Whey"
+        },
+        "price":6000,
+        "taste":1,
+        "volume":3000,
+        "category":1,
+        "brand":4
+    },
+    {
+        "id":5,
+        "name":"Whey Gold",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Whey Gold"
+        },
+        "price":2000,
+        "taste":1,
+        "volume":500,
+        "category":1,
+        "brand":4
+    },
+    {
+        "id":6,
+        "name":"100% Pure Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"100% Pure Whey"
+        },
+        "price":5000,
+        "taste":1,
+        "volume":2000,
+        "category":1,
+        "brand":2
+    },
+    {
+        "id":7,
+        "name":"100% Pure Whey",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"100% Pure Whey"
+        },
+        "price":5000,
+        "taste":2,
+        "volume":2000,
+        "category":1,
+        "brand":2
+    },
+    {
+        "id":8,
+        "name":"100% Whey Isolate",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"100% Whey Isolate"
+        },
+        "price":3500,
+        "taste":5,
+        "volume":700,
+        "category":1,
+        "brand":2
+    },
+    {
+        "id":9,
+        "name":"Creatine Monohydrate",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Creatine Monohydrate QNT"
+        },
+        "price":1000,
+        "taste":null,
+        "volume":800,
+        "category":2,
+        "brand":3
+    },
+    {
+        "id":10,
+        "name":"Creatine Monohydrate",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Creatine Monohydrate UN"
+        },
+        "price":500,
+        "taste":null,
+        "volume":300,
+        "category":2,
+        "brand":4
+    },
+    {
+        "id":11,
+        "name":"BCAA+",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"BCAA+"
+        },
+        "price":1000,
+        "taste":null,
+        "volume":200,
+        "category":3,
+        "brand":2
+    },
+    {
+        "id":12,
+        "name":"BCAA",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"BCAA QNT"
+        },
+        "price":700,
+        "taste":6,
+        "volume":130,
+        "category":3,
+        "brand":3
+    },
+    {
+        "id":13,
+        "name":"BCAA",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"BCAA QNT"
+        },
+        "price":700,
+        "taste":4,
+        "volume":130,
+        "category":3,
+        "brand":3
+    },
+    {
+        "id":14,
+        "name":"Muscle Juice",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Muscle Juice"
+        },
+        "price":7000,
+        "taste":3,
+        "volume":5000,
+        "category":4,
+        "brand":4
+    },
+    {
+        "id":15,
+        "name":"Muscle Juice",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Muscle Juice"
+        },
+        "price":3000,
+        "taste":3,
+        "volume":1900,
+        "category":4,
+        "brand":4
+    },
+    {
+        "id":16,
+        "name":"Calcium",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Calcium"
+        },
+        "price":800,
+        "taste":null,
+        "volume":162,
+        "category":4,
+        "brand":5
+    },
+    {
+        "id":17,
+        "name":"Omega 3 + Vitamin E",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Omega 3_Vitamin E"
+        },
+        "price":1200,
+        "taste":null,
+        "volume":165,
+        "category":4,
+        "brand":5
+    },
+    {
+        "id":18,
+        "name":"Vitamin C",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Vitamin C"
+        },
+        "price":1200,
+        "taste":6,
+        "volume":158,
+        "category":4,
+        "brand":5
+    },
+    {
+        "id":18,
+        "name":"Zinc",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Zinc"
+        },
+        "price":1000,
+        "taste":6,
+        "volume":160,
+        "category":4,
+        "brand":3
+    },
+    {
+        "id":19,
+        "name":"Gloves",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Gloves"
+        },
+        "price":1500,
+        "taste":null,
+        "volume":null,
+        "category":5,
+        "brand":1
+    },
+    {
+        "id":20,
+        "name":"Straps",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Straps"
+        },
+        "price":1500,
+        "taste":null,
+        "volume":null,
+        "category":5,
+        "brand":1
+    },
+    {
+        "id":21,
+        "name":"Belt",
+        "picture":{
+            "src":"assets/img/deliciusWhey.jpg",
+            "alt":"Belt"
+        },
+        "price":3400,
+        "taste":null,
+        "volume":null,
+        "category":5,
+        "brand":1
+    }
+]

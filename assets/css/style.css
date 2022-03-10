@@ -85,7 +85,7 @@ img {
 .cart{
     font-size: 20px;
 }
-a.cart .cart-basket {
+.cart-basket {
     font-size: .6rem;
     position: absolute;
     top: -6px;
@@ -93,7 +93,6 @@ a.cart .cart-basket {
     width: 15px;
     height: 15px;
     color: #fff;
-    background-color: #418deb;
     border-radius: 50%;
   }
 #docs a:hover,
