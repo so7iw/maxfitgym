@@ -3,7 +3,7 @@
         "id":1,
         "name":"Delicius Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/deliciusWheyCookie.jpg",
             "alt":"Delicius Whey"
         },
         "price":3000,
@@ -16,8 +16,8 @@
         "id":2,
         "name":"Prostar 100% Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"Prostar 100% Whey"
+            "src":"assets/img/prostarWheyCookies.jpg",
+            "alt":"Prostar 100% Whey Cookie"
         },
         "price":6000,
         "taste":3,
@@ -29,8 +29,8 @@
         "id":3,
         "name":"Prostar 100% Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"Prostar 100% Whey"
+            "src":"assets/img/prostarWheyStrawberry.jpg",
+            "alt":"Prostar 100% Whey Strawberry"
         },
         "price":6000,
         "taste":2,
@@ -42,8 +42,8 @@
         "id":4,
         "name":"Prostar 100% Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"Prostar 100% Whey"
+            "src":"assets/img/prostarWheyVanilla.jpg",
+            "alt":"Prostar 100% Whey Vanilla"
         },
         "price":6000,
         "taste":1,
@@ -55,7 +55,7 @@
         "id":5,
         "name":"Whey Gold",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/wheyGold.jpg",
             "alt":"Whey Gold"
         },
         "price":2000,
@@ -68,8 +68,8 @@
         "id":6,
         "name":"100% Pure Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"100% Pure Whey"
+            "src":"assets/img/wheyPureVanilla.jpg",
+            "alt":"100% Pure Whey Vanilla"
         },
         "price":5000,
         "taste":1,
@@ -81,8 +81,8 @@
         "id":7,
         "name":"100% Pure Whey",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"100% Pure Whey"
+            "src":"assets/img/wheyPureStrawberry.jpg",
+            "alt":"100% Pure Whey Strawberry"
         },
         "price":5000,
         "taste":2,
@@ -94,7 +94,7 @@
         "id":8,
         "name":"100% Whey Isolate",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/wheyIsolateChocolate.jpg",
             "alt":"100% Whey Isolate"
         },
         "price":3500,
@@ -107,7 +107,7 @@
         "id":9,
         "name":"Creatine Monohydrate",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/creatineQNT.jpg",
             "alt":"Creatine Monohydrate QNT"
         },
         "price":1000,
@@ -120,7 +120,7 @@
         "id":10,
         "name":"Creatine Monohydrate",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/creatineUN.jpg",
             "alt":"Creatine Monohydrate UN"
         },
         "price":500,
@@ -133,7 +133,7 @@
         "id":11,
         "name":"BCAA+",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/bcaaMP.jpg",
             "alt":"BCAA+"
         },
         "price":1000,
@@ -146,7 +146,7 @@
         "id":12,
         "name":"BCAA",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/bcaaFruit.jpg",
             "alt":"BCAA QNT"
         },
         "price":700,
@@ -159,7 +159,7 @@
         "id":13,
         "name":"BCAA",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/bcaaOrange.jpg",
             "alt":"BCAA QNT"
         },
         "price":700,
@@ -172,7 +172,7 @@
         "id":14,
         "name":"Muscle Juice",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/muscleJuicesmall.jpg",
             "alt":"Muscle Juice"
         },
         "price":7000,
@@ -185,8 +185,8 @@
         "id":15,
         "name":"Muscle Juice",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
-            "alt":"Muscle Juice"
+            "src":"assets/img/muscleJuice.jpg",
+            "alt":"Muscle Juice XL"
         },
         "price":3000,
         "taste":3,
@@ -198,7 +198,7 @@
         "id":16,
         "name":"Calcium",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/calcium.jpg",
             "alt":"Calcium"
         },
         "price":800,
@@ -211,7 +211,7 @@
         "id":17,
         "name":"Omega 3 + Vitamin E",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/omega3vitaminE.jpg",
             "alt":"Omega 3_Vitamin E"
         },
         "price":1200,
@@ -224,7 +224,7 @@
         "id":18,
         "name":"Vitamin C",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/vitaminC.jpg",
             "alt":"Vitamin C"
         },
         "price":1200,
@@ -237,7 +237,7 @@
         "id":18,
         "name":"Zinc",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/zinc.jpg",
             "alt":"Zinc"
         },
         "price":1000,
@@ -250,7 +250,7 @@
         "id":19,
         "name":"Gloves",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/powerGrip.jpg",
             "alt":"Gloves"
         },
         "price":1500,
@@ -263,7 +263,7 @@
         "id":20,
         "name":"Straps",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/straps.jpg",
             "alt":"Straps"
         },
         "price":1500,
@@ -276,7 +276,7 @@
         "id":21,
         "name":"Belt",
         "picture":{
-            "src":"assets/img/deliciusWhey.jpg",
+            "src":"assets/img/belt.jpg",
             "alt":"Belt"
         },
         "price":3400,

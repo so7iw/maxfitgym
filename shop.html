@@ -27,15 +27,15 @@
         <div class="container-fluid" id="navig"></div>
     </nav>
     <div id="shopBanner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="assets/img/1.jpg" class="d-block w-100" alt="slide1">
-			</div>
-		</div>
-	</div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/1.jpg" class="d-block w-100" alt="slide1">
+            </div>
+        </div>
+    </div>
     <div class="container" id="shop">
-        <a class="btn btn-primary bg-danger btn-outline-light" id="filterBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
-            role="button" aria-controls="offcanvasExample">
+        <a class="btn btn-primary bg-danger btn-outline-light" id="filterBtn" data-bs-toggle="offcanvas"
+            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <i class="fas fa-filter"></i>
         </a>
         <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
@@ -46,30 +46,20 @@
                     aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div id="categories">
-                    <h2>Categories</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-dark">
-                            <input type="checkbox" value="1" class="zanr" name="zanrovi"/> Whey
-                         </li>
-                    </ul>
-                    <h2>Brands</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-dark">
-                            <input type="checkbox" value="1" class="zanr" name="zanrovi"/> QNT
-                         </li>
-                    </ul>
-                    <h2>Taste</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-dark">
-                            <input type="checkbox" value="1" class="zanr" name="zanrovi"/> Orange
-                         </li>
-                    </ul>
-                </div>
+                <h2 class="h4">Categories</h2>
+                <ul class="list-group" id="categories">
+                </ul>
+                <h2 class="h4">Brands</h2>
+                <ul class="list-group" id="brands">
+                </ul>
+                <h2 class="h4">Taste</h2>
+                <ul class="list-group" id="tastes">
+                </ul>
             </div>
         </div>
-        <div class="col-md-12 text-center">
-            <h3>Proizvodi</h3>
+        <h1 style="color:#fff;" class="h3" id="productHeading">Products</h1>
+        <div class="row" id="shopItems">
+
         </div>
     </div>
     </div>

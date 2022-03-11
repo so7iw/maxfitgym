@@ -11,6 +11,12 @@
 //     coachOutput();
 //     footerOutput();
 
+$(".category").change(filterChange);
+
+let categories = [];
+let brands = [];
+let tastes = [];
+
 let scriptIsLoaded = false;
 
 function loadAdditionalScript() {
@@ -431,8 +437,108 @@ function loadAdditionalScript() {
         return error;
     }
 
-    function categoriesOutput(){
-        
+    function categoriesOutput(data){
+        let output = "";
+        data.forEach(element => {
+            categories.push(element);
+            output += `
+            <li class="list-group-item bg-dark">
+                            <input type="checkbox" value="${element.id}" class="category" name="categories"/> <span class="light">${element.name}</span>
+                         </li>
+            `;
+        });
+        document.getElementById("categories").innerHTML = output;
+        fetchData("brands", brandsOutput);
     }
+
+    function brandsOutput(data){
+        let output = "";
+        data.forEach(element => {
+            brands.push(element);
+            output +=`
+            <li class="list-group-item bg-dark">
+                            <input type="checkbox" value="${element.id}" class="brand" name="brands"/> <span class="light">${element.name}</span>
+                         </li>
+            `;
+        });
+        document.getElementById("brands").innerHTML = output;
+        fetchData("tastes", tastesOutput);
+    }
+
+    function tastesOutput(data){
+        let output = "";
+        data.forEach(element => {
+            tastes.push(element);
+            output +=`
+            <li class="list-group-item bg-dark">
+                            <input type="checkbox" value="${element.id}" class="brand" name="brands"/> <span class="light">${element.name}</span>
+                         </li>
+            `;
+        });
+        document.getElementById("tastes").innerHTML = output;
+        console.log(brands);
+        fetchData("shopItems", shopItemsOutput);
+    }
+
+
+
+    function filterChange(){
+        fetchData("shopItems", shopItemsOutput);
+    }
+
+    function shopItemsOutput(data){
+        let output = "";
+        data = categoryFilter(data);
+        data.forEach(element => {
+            output += `
+            <!--<div class="col-lg-3 col-md-4 col-sm-2">-->
+                <div class="card bg-dark" style="width: 16rem;">
+                    <img src="${element.picture.src}" class="card-img-top" alt="${element.picture.alt}">
+                    <div class="card-body">
+                        <h5 class="card-title">${element.name}</h5>
+                        <!-- <p class="card-text">${getCategory(element.category)}</p> -->
+                        <p class="card-text">${getBrand(element.brand)}</p>
+                        `
+                        if(element.taste)
+                        output +=`
+                        <p class="card-text">Taste: ${getTaste(element.taste)}</p>
+                        `
+                        if(element.volume)
+                        output+=`
+                        <p class="card-text">${element.volume} g</p>
+                        `
+                        output+=`
+                        <h5 class="card-text">${element.price} RSD</h5>S
+                        <div class="center"><a href="#" class="btn btn-primary btn-danger">Add to cart</a></div>
+                    </div>
+                </div>
+            <!--</div>-->
+            `
+        });
+        document.getElementById("shopItems").innerHTML = output;
+    }
+
+    function getBrand(id){
+		return brands.filter(b => b.id == id)[0].name;
+	}
+    function getTaste(id){
+        if(id)
+		return tastes.filter(b => b.id == id)[0].name;
+        else return " ";
+	}
+    function getCategory(id){
+		return categories.filter(b => b.id == id)[0].name;
+	}
+
+    function categoryFilter(data){
+		let selectedCategory = [];
+		$('.category:checked').each(function(el){
+			selectedCategory.push(parseInt($(this).val()));
+		});
+		if(selectedCategory.length != 0){
+			return data.filter(x => x.categories.some(y => selectedCategory.includes(y)));	
+		}
+		return data;
+	}
 
 
