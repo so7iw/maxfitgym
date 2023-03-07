@@ -13,6 +13,7 @@
 
 $(".category").change(filterChange);
 
+
 let categories = [];
 let brands = [];
 let tastes = [];
@@ -54,13 +55,19 @@ function loadAdditionalScript() {
         });
     }
 
-    function navOutput(data) {
+    function printCartProductsNumberOutput(){
+        let numberOfProducts = getNumberOfProducts();
+        $(".cart-basket").html=numberOfProducts;
+        console.log("printing cart number");
+    }
 
+    function navOutput(data) {
+        let numberOfProducts = getNumberOfProducts();
         let output = "";
         output += `
 <a class="navbar-brand text-danger" href="index.html">MaxFit</a>
 <a class="nav-link cart position-relative d-inline-flex" href="#"><i class="fas fa-shopping-cart" id="cart"></i><span class="cart-basket d-flex align-items-center justify-content-center bg-danger">
-3
+${numberOfProducts}
 </span></a>
 
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,6 +103,34 @@ function loadAdditionalScript() {
         }
     }
 
+    //dobavljanje broja artikala
+
+    function getNumberOfProducts(){
+        let numberOfProducts;
+        let productsCart = getItemFromLS("cart");
+        console.log(productsCart);
+    
+        if(productsCart == null){
+            numberOfProducts = 0;
+            //$("#broj-proizvoda").html(`(0 products)`);
+        }
+        else{
+            numberOfProducts = productsCart.length;
+            //$("#broj-proizvoda").html(`(${numberOfProducts} ${txt})`)
+        }
+
+        return numberOfProducts;
+    }
+
+    //Local Storage menadzment
+
+    function setItemToLS(name, value){
+        localStorage.setItem(name, JSON.stringify(value));
+    }
+    function getItemFromLS(name){
+        return JSON.parse(localStorage.getItem(name));
+    }
+
     // ispis ponude
 
     function offersOutput(data) {
@@ -120,6 +155,70 @@ function loadAdditionalScript() {
         });
         document.getElementById("packages").innerHTML = output;
         fetchData("author", authorOutput);
+    }
+
+    //dodavanje artikla u cart
+
+    function addToCart(){
+        let idP = $(this).data("id");
+        console.log(idP)
+    
+        let productsCart = getItemFromLS("cart");
+    
+        if(productsCart == null){
+            addFirstItemToCart();
+            printCartProductsNumberOutput();
+        }
+        else{
+            if(productIsAlreadyInCart()){
+                updateQty();
+            }
+            else{
+                addItemToCart();
+                printCartProductsNumberOutput();
+            }
+        }
+    
+        function addFirstItemToCart(){
+            let products = [
+                {
+                    id: idP,
+                    qty: 1
+                }
+            ];
+    
+            setItemToLS("cart", products);
+        }
+    
+        function productIsAlreadyInCart(){
+            return productsCart.filter(el => el.id == idP).length;
+        }
+    
+        function updateQty(){
+    
+            let productsLS = getItemFromLS("cart");
+    
+            for(let p of productsLS){
+                if(p.id == idP){
+                    p.qty++;
+                    break;
+                }
+            }
+    
+            setItemToLS("cart", productsLS);
+        }
+    
+        function addItemToCart(){
+            let productLS = getItemFromLS("cart");
+    
+            productLS.push({
+                id: idP,
+                qty: 1
+            });
+    
+            setItemToLS("cart", productLS);
+        }
+        
     }
 
     //ispis autora
@@ -483,6 +582,7 @@ function loadAdditionalScript() {
 
 
     function filterChange(){
+        console.log("filter change trigger");
         fetchData("shopItems", shopItemsOutput);
     }
 
@@ -509,13 +609,14 @@ function loadAdditionalScript() {
                         `
                         output+=`
                         <h5 class="card-text">${element.price} RSD</h5>S
-                        <div class="center"><a href="#" class="btn btn-primary btn-danger">Add to cart</a></div>
+                        <div class="center"><a data-id=${element.id} href="#" class="btn btn-primary btn-danger add-to-cart">Add to cart</a></div>
                     </div>
                 </div>
             <!--</div>-->
             `
         });
         document.getElementById("shopItems").innerHTML = output;
+        $(".add-to-cart").click(addToCart);
     }
 
     function getBrand(id){
