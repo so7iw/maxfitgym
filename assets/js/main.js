@@ -1,5 +1,3 @@
-
-
 //ispis navigaicje
 
 // navOutput();
@@ -57,8 +55,7 @@ function loadAdditionalScript() {
 
     function printCartProductsNumberOutput(){
         let numberOfProducts = getNumberOfProducts();
-        $(".cart-basket").html=numberOfProducts;
-        console.log("printing cart number");
+        document.getElementById("cart-number").innerHTML = numberOfProducts;
     }
 
     function navOutput(data) {
@@ -66,7 +63,7 @@ function loadAdditionalScript() {
         let output = "";
         output += `
 <a class="navbar-brand text-danger" href="index.html">MaxFit</a>
-<a class="nav-link cart position-relative d-inline-flex" href="#"><i class="fas fa-shopping-cart" id="cart"></i><span class="cart-basket d-flex align-items-center justify-content-center bg-danger">
+<a class="nav-link cart position-relative d-inline-flex" href="#"><i class="fas fa-shopping-cart" id="cart"></i><span id="cart-number" class="cart-basket d-flex align-items-center justify-content-center bg-danger">
 ${numberOfProducts}
 </span></a>
 
@@ -112,11 +109,9 @@ ${numberOfProducts}
     
         if(productsCart == null){
             numberOfProducts = 0;
-            //$("#broj-proizvoda").html(`(0 products)`);
         }
         else{
             numberOfProducts = productsCart.length;
-            //$("#broj-proizvoda").html(`(${numberOfProducts} ${txt})`)
         }
 
         return numberOfProducts;
@@ -157,7 +152,7 @@ ${numberOfProducts}
         fetchData("author", authorOutput);
     }
 
-    //dodavanje artikla u cart
+    //dodavanje artikla u korpu
 
     function addToCart(){
         let idP = $(this).data("id");
@@ -167,7 +162,6 @@ ${numberOfProducts}
     
         if(productsCart == null){
             addFirstItemToCart();
-            printCartProductsNumberOutput();
         }
         else{
             if(productIsAlreadyInCart()){
@@ -175,9 +169,10 @@ ${numberOfProducts}
             }
             else{
                 addItemToCart();
-                printCartProductsNumberOutput();
             }
         }
+
+        printCartProductsNumberOutput();
     
         function addFirstItemToCart(){
             let products = [
@@ -282,7 +277,7 @@ ${numberOfProducts}
 
     //ispisvanje forme 2
 
-    function formOutput2() {
+    function formOutput2(data) {
 
         let arr = ["Crossfit", "Calisthenics", "Bodybuilding", "Powerlifting", "Gym Membership", "Recovery"]
         let output2 = "";
@@ -324,7 +319,7 @@ ${numberOfProducts}
 							<input type="button" id="btnSend" onClick="formValidation2()" value="Send" class="btn btn-primary btn-light" />
                         </div>
                         <div class="form-group">
-							<input type="button" id="btnBack" onClick="formOutput()" value="Back to survey" class="btn btn-primary btn-light" />
+							<input type="button" id="btnBack" onClick="fetchData('formQuestions', formOutput)" value="Back to survey" class="btn btn-primary btn-light" />
                         </div>
 					</div>
 				</div>

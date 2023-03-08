@@ -105,7 +105,7 @@ img {
   }
 #docs a:hover,
 #icons a:hover {
-    color: red;
+    color: #dc3545;
 }
 .btn {
     margin-top: 10px;
@@ -151,4 +151,10 @@ img {
 }
 .center{
     text-align: center;
+}
+#description a{
+    color: #fff;
+}
+#description a:hover{
+    color: #dc3545;
 }
